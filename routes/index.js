@@ -1,14 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const { getHomePage, getReviewsPage } = require('../controllers/index');
+const reviewRoutes = require('./reviews');
 
 // main page
-router.get('/', (req, res) => {
-    res.render('index', { title: 'Book Review App' });
-});
+router.get('/', getHomePage);
 
-// all reviews
-router.get('/reviews', (req, res) => {
-    res.render('reviews', { title: 'Book Reviews' });
-});
+// page with reviews
+router.use('/reviews', reviewRoutes);
 
 module.exports = router;
