@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div(class="container mt-5")
+    h2 Update Book Review
+
+    form(action=`/reviews/update/${review._id}`, method="POST")
+      .form-group
+        label(for="title") Title
+        input.form-control(type="text", name="title", id="title", value=review.title, placeholder="Title of the book", required)
+
+      .form-group
+        label(for="author") Author
+        input.form-control(type="text", name="author", id="author", value=review.author, placeholder="Author of the book", required)
+
+      .form-group
+        label(for="genre") Genre
+        input.form-control(type="text", name="genre", id="genre", value=review.genre, placeholder="Genre of the book", required)
+
+      .form-group
+        label(for="rating") Rating
+        input.form-control(type="number", name="rating", id="rating", min="1", max="5", value=review.rating, placeholder="Rating  1-5", required)
+
+      .form-group
+        label(for="review") Review Text
+        textarea.form-control(name="reviewText", id="review", rows="4", placeholder="Insights, thoughts from the book", required)= review.reviewText
+
+      button.btn.btn-primary.mt-2(type="submit") Update Review
+
+    a.btn.btn-secondary.mt-3(href="/reviews") Back to Reviews

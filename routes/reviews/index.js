@@ -1,15 +1,23 @@
 const express = require('express');
 const router = express.Router();
-const { showCreateReviewForm, createReview, getAllReviews } = require('../../controllers/reviews');
+const { showCreateReviewForm, createReview, getAllReviews, showEditReviewForm, updateReview, deleteReview } = require('../../controllers/reviews');
 
 // get all reviews
 router.get('/', getAllReviews);
 
-// GET Render page with the form to create a new review
+// render page with the form to create a new review
 router.get('/create', showCreateReviewForm);
 
-// POST Handle the form submission and save the new review
+// handle CREATE review
 router.post('/create', createReview);
 
+// show form to edit an existing review
+router.get('/update/:id', showEditReviewForm);
+
+// handle UPDATE review
+router.post('/update/:id', updateReview);
+
+// DELETE review
+router.post('/delete/:id', deleteReview);
 
 module.exports = router;
