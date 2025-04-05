@@ -1,0 +1,30 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.main-wrapper {
+    position: relative;
+}
+.main {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;  
+    max-width: 600px;  
+}
+
+@media (max-width: 768px) {
+    .main {
+        top: 30vh;  
+        width: 90%;  
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        top: 20vh; 
+        width: 95%;  
+    }
+}

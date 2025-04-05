@@ -1,7 +1,1 @@
-API alohida chiqarib qo'yish kerak.
-server validation qo'shish kerak
-error handling
-main page design
-responsiveness
-
-clean code
+deploy

@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1 Welcome to Book Review App
-  p This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service.
-  
+  .main-wrapper
+    .text-center.main
+      h1 BOOK REVIEW APP
+      p This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service.
+      a.btn.btn-submit.btn-secondary.d-inline-block.me-3(href="/reviews") VIEW REVIEWS
+      a.btn.btn-submit.btn-dark.d-inline-block(href="/reviews/create") ADD REVIEW
+    
