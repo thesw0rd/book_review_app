@@ -26,7 +26,7 @@ block content
                 p= review.reviewText
               .d-flex.justify-content-start.mt-3
                 a.btn.btn-secondary.me-2(href=`/reviews/update/${review._id}`) Edit
-                form(method='POST', action=`/reviews/delete/${review._id}`)
+                form(method='POST', action=`/reviews/api/delete/${review._id}`)
                   button.btn.btn-danger(type='submit' onclick="return confirm('Are you sure you want to delete this review?')") Delete
             //- .card-footer
             //-   p.card-text= review.lastUpdated    todo

@@ -4,7 +4,7 @@ block content
   div(class="container mt-5")
     h2 Update Book Review
 
-    form(action=`/reviews/update/${review._id}`, method="POST")
+    form(action=`/reviews/api/update/${review._id}`, method="POST")
       .form-group
         label(for="title") Title
         input.form-control(type="text", name="title", id="title", value=review.title, placeholder="Title of the book", required)

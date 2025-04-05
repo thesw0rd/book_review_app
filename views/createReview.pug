@@ -4,7 +4,7 @@ block content
   div(class="container mt-5")
     h2 Add a New Book Review
 
-    form(action="/reviews/create", method="POST")
+    form(action="/reviews/api/create", method="POST")
       .form-group
         label(for="title") Title
         input.form-control(type="text", name="title", id="title", placeholder="Title of the book", required)
@@ -24,7 +24,11 @@ block content
       .form-group
         label(for="review") Review Text
         textarea.form-control(name="reviewText", id="review", rows="4", placeholder="Insights, thoughts from the book", required)
-
+      if errors
+        .alert.alert-danger.mt-2
+          ul
+            each error in errors
+              li= error.msg
       button.btn.btn-primary.mt-2(type="submit") Submit Review
 
     a.btn.btn-secondary.mt-3(href="/") Back to Home

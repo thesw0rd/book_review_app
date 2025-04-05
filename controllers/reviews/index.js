@@ -20,15 +20,11 @@ exports.showCreateReviewForm = (req, res) => {
 // Handle form submission for CREATE a new review
 exports.createReview = async (req, res) => {
 try {
-  console.log('Received form data:', req.body); 
-
   const { title, author, genre, rating, reviewText } = req.body;
-
   if (!title || !author || !genre || !rating || !reviewText) {
     console.error('Missing required fields');
     return res.status(400).send('Missing required fields');
   }
-
   const newReview = new Review({
     title,
     author,
