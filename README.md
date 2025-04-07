@@ -36,7 +36,7 @@ Developed as part of the **Web Technologies** coursework.
 ---
 
 ## 📂 Project Structure
-
+```
 book-review-app/
 ├── controllers/          # Logic for handling requests and responses
 │   └── reviews/          # Review-specific controller functions
@@ -56,7 +56,7 @@ book-review-app/
 ├── app.js                # Main server file (Express app entry point)
 ├── package.json          # Project metadata and dependencies
 └── README.md             # Project documentation
-
+```
 ---
 
 ## 🧪 Installation & Running Locally
