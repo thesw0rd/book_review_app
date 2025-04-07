@@ -49,6 +49,8 @@ book-review-app/
 │   ├── reviews.pug       # List of all reviews
 │   ├── createReview.pug  # Form to add a new review
 │   └── updateReview.pug  # Form to edit a review
+├── middlewares/          # Middleware for express-validator
+├── validators/           # Validator for form submission
 ├── public/               # Static assets (CSS, images)
 │   └── styles.css        # Custom styles
 ├── .env                  # Environment variables (NOT pushed to GitHub)
