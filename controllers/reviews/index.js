@@ -1,4 +1,3 @@
-// controllers/reviews/index.js
 const Review = require('../../models/Review');
 
 // Get all reviews
