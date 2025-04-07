@@ -72,7 +72,7 @@ book-review-app/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/book-review-app.git
+   git clone https://github.com/00017353/book_review_app.git
    cd book-review-app
    ```
 2. Install dependencies:
