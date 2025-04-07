@@ -42,7 +42,7 @@ book-review-app/
 │   └── reviews/          # Review-specific controller functions
 ├── models/               # Mongoose schemas (Review model)
 ├── routes/               # Express route definitions
-│   └── reviews.js        # Routes for review-related pages
+│   └── reviews/          # Routes for review-related pages
 ├── views/                # Pug templates for frontend rendering
 │   ├── layout.pug        # Base layout template
 │   ├── index.pug         # Homepage template
@@ -80,11 +80,6 @@ book-review-app/
    ```
 
 ---
-
-## 📌 Notes
-
-> This project was created **only for educational purposes**.  
-> It does **not** represent a real company or commercial product.
 
 ## 🧠 Author Info
 
