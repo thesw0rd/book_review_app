@@ -59,6 +59,15 @@ book-review-app/
 ```
 ---
 
+## 📦 Dependencies
+
+- express
+- mongoose
+- pug
+- dotenv
+- express-validator
+- nodemon (dev)
+
 ## 🧪 Installation & Running Locally
 
 1. Clone the repository:
