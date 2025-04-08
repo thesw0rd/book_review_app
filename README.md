@@ -81,7 +81,7 @@ book-review-app/
    ```bash
    npm install
    ```
-3. Create a .env file in the root directory:
+3. Create a .env file in the root directory and put MongoDB Connection String (uploaded in intranet .zip):
    ```bash
    MONGO_URI=your_mongodb_connection_string
    ```
