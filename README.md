@@ -6,7 +6,7 @@ Developed as part of the **Web Technologies** coursework.
 ## 🔗 Project Links
 
 - 🌐 Live App: https://book-review-app-23pf.onrender.com/
-- 📁 GitHub Repository: https://github.com/yourusername/your-repo-name
+- 📁 GitHub Repository: https://github.com/thesw0rd/book_review_app
 
 ---
 
